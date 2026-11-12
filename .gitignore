@@ -1,0 +1,13 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Temporary and backup files
+*.tmp*
+*.bak*
+
+# Node dependencies
+node_modules/
+
+# Isolated installer & verification sandbox directories
+.tmp-test*/

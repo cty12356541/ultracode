@@ -1,0 +1,18 @@
+{
+  "name": "ultracode",
+  "displayName": "Ultracode v2 Orchestrator",
+  "version": "2.0.0",
+  "description": "Multi-phase subagent orchestration, semantic category routing, and zero-trust adversarial verification suite for Google Antigravity.",
+  "logo": "assets/logo.svg",
+  "author": {
+    "name": "Tianyu Cheng",
+    "url": "https://github.com/cty12356541"
+  },
+  "homepage": "https://github.com/cty12356541/ultracode",
+  "repository": "https://github.com/cty12356541/ultracode",
+  "suggestedPrompts": [
+    "Orchestrate this multi-module engineering requirement with Ultracode v2 disjoint lanes and 3-lens adversarial review",
+    "Run a Judge Panel across 3 orthogonal architecture angles and synthesize a TDD implementation breakdown",
+    "Execute a Loop-Until-Dry audit sweep with seen-set deduplication and Adversarial Skeptic verification"
+  ]
+}

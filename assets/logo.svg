@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="ucBadgeBg" x1="36" y1="36" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="55%" stop-color="#111C35"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="ucBadgeRim" x1="36" y1="36" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="ucShieldLeft" x1="92" y1="86" x2="128" y2="172" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="ucShieldRight" x1="128" y1="86" x2="164" y2="172" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A5B4FC"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="ucRayGrad" x1="73" y1="64" x2="183" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded dark high-contrast badge base (strictly inside [34, 222] for >=12% 32px transparent margin) -->
+  <rect x="35.5" y="35.5" width="185" height="185" rx="40" fill="url(#ucBadgeBg)" stroke="url(#ucBadgeRim)" stroke-width="3"/>
+  <rect x="42" y="42" width="172" height="172" rx="34" stroke="#F8FAFC" stroke-opacity="0.12" stroke-width="1.25"/>
+
+  <!-- Outer True-Barrier hexagonal verification orbit -->
+  <polygon points="128,64 183,96 183,160 128,192 73,160 73,96" stroke="#38BDF8" stroke-opacity="0.28" stroke-width="1.75" stroke-dasharray="5 4"/>
+
+  <!-- Flat Depth-1 star topology connection rays -->
+  <g stroke="url(#ucRayGrad)" stroke-width="2.5" stroke-linecap="round">
+    <line x1="128" y1="128" x2="128" y2="64"/>
+    <line x1="128" y1="128" x2="183" y2="96"/>
+    <line x1="128" y1="128" x2="183" y2="160"/>
+    <line x1="128" y1="128" x2="128" y2="192"/>
+    <line x1="128" y1="128" x2="73" y2="160"/>
+    <line x1="128" y1="128" x2="73" y2="96"/>
+  </g>
+
+  <!-- 6 orthogonal semantic lane / lens satellite nodes -->
+  <g fill="#0F172A" stroke-width="2.5">
+    <circle cx="128" cy="64" r="6.5" stroke="#38BDF8"/>
+    <circle cx="183" cy="96" r="6.5" stroke="#60A5FA"/>
+    <circle cx="183" cy="160" r="6.5" stroke="#818CF8"/>
+    <circle cx="128" cy="192" r="6.5" stroke="#34D399"/>
+    <circle cx="73" cy="160" r="6.5" stroke="#818CF8"/>
+    <circle cx="73" cy="96" r="6.5" stroke="#38BDF8"/>
+  </g>
+  <g fill="#F8FAFC">
+    <circle cx="128" cy="64" r="2.4"/>
+    <circle cx="183" cy="96" r="2.4"/>
+    <circle cx="183" cy="160" r="2.4"/>
+    <circle cx="128" cy="192" r="2.4"/>
+    <circle cx="73" cy="160" r="2.4"/>
+    <circle cx="73" cy="96" r="2.4"/>
+  </g>
+
+  <!-- Central adversarial verification shield + dual-facet prism -->
+  <path d="M128 84 L91 103 L96 145 L128 174 Z" fill="url(#ucShieldLeft)"/>
+  <path d="M128 84 L165 103 L160 145 L128 174 Z" fill="url(#ucShieldRight)"/>
+  <path d="M128 84 L165 103 L160 145 L128 174 L96 145 L91 103 Z" stroke="#F8FAFC" stroke-opacity="0.88" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- Inner zero-trust skeptic prism facet & verification mark -->
+  <polygon points="128,100 149,127 128,156 107,127" fill="#0B1120" fill-opacity="0.86" stroke="#BAE6FD" stroke-opacity="0.65" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M118.5 127.5 L125.5 134.5 L138.5 119.5" stroke="#34D399" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
